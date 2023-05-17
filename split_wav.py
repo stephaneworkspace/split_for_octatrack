@@ -36,12 +36,11 @@ class SplitWav():
 
     def multiple_split_bar(self, bpm, bars):
         total_mins = self.get_duration()
-        print(total_mins)
+        print('total : ' + str(total_mins))
         one_beat_ms = (60 / bpm) * 1000
         bars_s = (one_beat_ms * bars * 4) / 1000
         elements = math.ceil(total_mins / bars_s)
-        print(bars_s)
-        print(elements)
+        print('bars: ' + str(bars_s))
         i = 1
         while i <= elements:
             split_fn = str(i) + '_' + self.filename
