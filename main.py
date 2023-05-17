@@ -18,6 +18,6 @@ if __name__ == '__main__':
     file = 'octa-export-dnb01-01-44100.wav'
     split_wav = SplitWav(folder, file)
     #split_wav.multiple_split(min_per_split=0.109714285714286000000000000000)
-    split_wav.multiple_split_bar(bpm=175, bars=8)
+    split_wav.multiple_split_bar(bpm=175, bars=8*4)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
